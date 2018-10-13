@@ -149,6 +149,7 @@ function instruction9() {
     var e = document.createElement("img");
     e.src = 'photo.jpg';
     var block = document.getElementsByTagName("article")[0];
+    e.style.width= "100px";
     block.appendChild(e);
 
     var links = document.createElement("button");
@@ -160,6 +161,11 @@ function instruction9() {
     rechts.addEventListener('click', function(){ alert("Naar rechts");  });
     rechts.innerText = "Rechts";
     block.appendChild(rechts);
+    //
+    var p = document.createElement("p");
+    p.appendChild(rechts);
+    p.appendChild(links);
+    block.appendChild(p);
 
     updateContent("Opdracht 9 - Elementen toevoegen", description, "");
 
